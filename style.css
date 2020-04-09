@@ -1,52 +1,65 @@
 /* Layout */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #181936;
+}
 .main {
     display: flex;
     padding: 2em;
-    height: 90vh;
+    /* height: 70vh; */
     justify-content: center;
-    align-items: middle;
+    /* align-items: center; */
+    
 }
-
 .clockbox,
 #clock {
-    width: 100%;
+    box-shadow: inset 0 0 10px #272a53;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
 }
 
 /* Clock styles */
 .circle {
     fill: none;
-    stroke: #000;
+    stroke:#181936;
     stroke-width: 9;
     stroke-miterlimit: 10;
+    
 }
 
 .mid-circle {
-    fill: #000;
+    fill: white;
 }
 .hour-marks {
     fill: none;
-    stroke: #000;
+    stroke: white;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
 
 .hour-arm {
     fill: none;
-    stroke: #000;
+    stroke: rgb(255, 237, 237);
     stroke-width: 17;
     stroke-miterlimit: 10;
+    border-radius: 20px;    
 }
 
 .minute-arm {
     fill: none;
-    stroke: #000;
+    stroke: white;
     stroke-width: 11;
     stroke-miterlimit: 10;
+    border-radius: 20px;
 }
 
 .second-arm {
     fill: none;
-    stroke: #000;
+    stroke:white;
     stroke-width: 4;
     stroke-miterlimit: 10;
     
@@ -63,5 +76,17 @@
 #minute,
 #second {
     transform-origin: 300px 300px;
-    /* transition: transform -15s ease-in-out; */
+    /* transition: transform 1s ease-in-out; */
 }
+.elecronique{
+    margin-top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    width: 330px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: inset 0 0 10px #272a53;
+}
+
